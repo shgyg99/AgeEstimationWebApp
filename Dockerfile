@@ -10,14 +10,12 @@
 FROM python:3.11.8
 
 EXPOSE 8080
-
+COPY . .
 # Upgrade pip and install requirements
 COPY requirements.txt requirements.txt
 RUN pip install -U pip
 RUN pip install -r requirements.txt
 
-COPY . .
 WORKDIR /app
 
-ENTRYPOINT ["streamlit", "run"]
-CMD ["app.py"]
+ENTRYPOINT ["streamlit", "run", 'app.py']
