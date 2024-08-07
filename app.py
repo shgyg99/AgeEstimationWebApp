@@ -81,14 +81,6 @@ tab1, tab2 = st.tabs(['UPLOAD A PICTURE', 'TAKE A PICTURE'])
 with tab1:
     up = st.file_uploader('upload', type=['png', 'jpg'])
     if up is not None:
-        
-        bar = st.progress(0)
-        time.sleep(1)
-        bar.progress(30)
-        time.sleep(1)
-        bar.progress(70)
-        time.sleep(1)
-        bar.progress(100)
 
         a = st.image(up)
         b = st.warning('just a sec')
@@ -112,9 +104,6 @@ with tab2:
 
 
     if image is not None:
-
-        st.write(image)
-
 
         a = st.image(image)
         b = st.warning('just a sec')
