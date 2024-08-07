@@ -1,8 +1,8 @@
 ---
 title: AgeEstimationApp
-emoji: 🏆
-colorFrom: gray
-colorTo: pink
+emoji: 🌖
+colorFrom: red
+colorTo: gray
 sdk: streamlit
 sdk_version: 1.37.1
 app_file: app.py
