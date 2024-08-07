@@ -9,12 +9,15 @@
 
 FROM python:3.11.8
 
-WORKDIR /app
+EXPOSE 8080
+
+# Upgrade pip and install requirements
+COPY requirements.txt requirements.txt
+RUN pip install -U pip
+RUN pip install -r requirements.txt
 
 COPY . .
+WORKDIR /app
 
-RUN python -m pip install -r requirements.txt
-
-
-# Run the application.
-CMD ["streamlit", "run" ,"app.py"]
+ENTRYPOINT ["streamlit", "run"]
+CMD ["app/app.py"]
