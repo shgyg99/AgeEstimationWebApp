@@ -20,4 +20,4 @@ COPY . .
 WORKDIR /app
 
 ENTRYPOINT ["streamlit", "run"]
-CMD ["app/app.py"]
+CMD ["app.py"]
