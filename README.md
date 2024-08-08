@@ -5,3 +5,6 @@ I have developed a web application that estimates age. This application is built
 
 ## Conect me
 For conect me, email shgyg99@gmail.com .
+## Main repo
+This repository serves as the main repository where the model was built and stored. You can clone it to access additional features such as webcam integration and more on your local machine. 
+https://github.com/shgyg99/Age_Estimation
